@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-todo-list';
+  items = " ";
+
+
+onSubmit(dataForm: any) {
+    console.log(dataForm.form.value.todoItem);
+    
+  }
+  
 }
